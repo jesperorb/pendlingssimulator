@@ -6,6 +6,8 @@
 * Verlighetsbaserade felmeddelanden
 * Förväntad ankomst räknas ut och ändras med en vetenskaplig metod (`randomNumber === 3`)
 
+![pendlingssimulator](images/pendly.png)
+
 ## Köra på
 
 * Öppna bara `index.html`, finns inget fancy byggsteg.
