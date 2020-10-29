@@ -1,0 +1,115 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  font-family: monospace;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  margin: 0;
+}
+
+body, .card, .track, .info, .info > div{
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  height: 15rem;
+  background-color: #000;
+  border: 2rem solid #444;
+  padding: 1rem;
+  box-shadow: 1px 1px 0 #000,
+              2px 2px 0 #000,
+              3px 3px 0 #000,
+              4px 4px 0 #000,
+              5px 5px 0 #000;
+}
+
+.track {
+  color: #fff;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.track p:first-child {
+  font-size: 1.2rem;
+}
+
+.track p:last-child {
+  font-size: 3rem;
+}
+
+.info {
+  color: yellow;
+  flex: 10;
+  font-size: 1.2rem;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.info > div {
+  justify-content: space-between;
+}
+
+.destination {
+  flex: 1;
+  border: none;
+  background-color: #000;
+  color: yellow;
+}
+
+.destination:focus{
+  outline: none;
+}
+
+.scrolling-text {
+  animation: scrolling-text 8s linear infinite;
+}
+
+@-webkit-keyframes scrolling-text{
+  0% {
+    transform: translateX(100%)
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrolling-text{
+  0% {
+    transform: translateX(100%)
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (min-width: 800px){
+  .destination, .info {
+    font-size: 2.2rem;
+  }
+  .card {
+    width: 50%;
+  }
+}
